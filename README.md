@@ -1,3 +1,13 @@
+###List of commands:
+```
+~ rerun chess
+add-php-cs-fixer: "adds precommit hook with php-cs-fixer to your git"
+build: "builds and dump assets"
+clean-writeable: "clean errors and logs left with other permissions"
+load-fixtures: "load all fixtures"
+memcached: "run memcached with default options"
+```
+
 ###Instructions
 
 First of all you have to have https://github.com/rerun/rerun installed.
