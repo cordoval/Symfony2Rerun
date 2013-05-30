@@ -58,6 +58,7 @@ rerun_options_parse "$@"
 
 # Command implementation
 # ----------------------
+rm -rf api/cache/*
 rm -rf chess/cache/*
 rm -rf web_writeable/errors/*
 rm -rf web_writeable/logs/*
