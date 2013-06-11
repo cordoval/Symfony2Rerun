@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p add-php-cs-fixer [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p add-php-cs-fixer [--answers <>]
 #
 
 # Helpers

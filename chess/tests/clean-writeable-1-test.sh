@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p clean-writeable [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p clean-writeable [--answers <>]
 #
 
 # Helpers

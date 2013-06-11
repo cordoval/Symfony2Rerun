@@ -1,4 +1,4 @@
-# Shell functions for the chess module.
+# Shell functions for the sf2 module.
 #/ usage: source RERUN_MODULE_DIR/lib/functions.sh command
 #
 

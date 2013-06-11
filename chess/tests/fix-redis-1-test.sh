@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p fix-redis [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p fix-redis [--answers <>]
 #
 
 # Helpers

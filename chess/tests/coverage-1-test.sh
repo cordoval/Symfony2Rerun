@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p coverage [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p coverage [--answers <>]
 #
 
 # Helpers

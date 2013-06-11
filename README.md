@@ -1,6 +1,6 @@
 ###List of commands:
 ```
-~ rerun chess
+~ rerun sf2
 add-php-cs-fixer: "adds precommit hook with php-cs-fixer to your git"
 build: "builds and dump assets"
 clean-writeable: "clean errors and logs left with other permissions"
@@ -17,14 +17,14 @@ Assuming you have cloned the rerun folder under Sites:
 ```
 cd /Users/cordoval/Sites/rerun/modules
 rm -rf *
-git clone git@github.com:ChessCom/rerun.git .
+git clone git@github.com:cordoval/Symfony2Rerun.git .
 ```
 
 Then go to your terminal and do:
 
 ```
-~ rerun chess
-Available commands in module, "/Users/cordoval/Sites/rerun/modules/chess":
+~ rerun sf2
+Available commands in module, "/Users/cordoval/Sites/rerun/modules/sf2":
 build: "builds and dump assets"
 clean-writeable: "clean errors and logs left with other permissions"
 load-fixtures: "load all fixtures"
@@ -36,7 +36,7 @@ You should see several commands already loaded that are ready to use.
 Create new commands with:
 
 ```
-~ rerun stubbs:add-command --module chess
+~ rerun stubbs:add-command --module sf2
 ```
 
 And follow the instructions given there.
@@ -45,14 +45,14 @@ And follow the instructions given there.
 Edit command just created with:
 
 ```
-~ rerun stubbs:edit --module chess --command my-new-command
+~ rerun stubbs:edit --module sf2 --command my-new-command
 ```
 Or use your favorite editor to edit the files (preferred).
 
 Run commands:
 
 ```
-~ rerun chess:my-new-command
+~ rerun sf2:my-new-command
 ```
 
 Profit!

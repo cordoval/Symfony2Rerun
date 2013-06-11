@@ -9,8 +9,8 @@
 # The `command` and `usage` comments describe the command
 # and show its options.
 # 
-#/ command: chess:load-fixtures: "load all fixtures"
-#/ usage: rerun chess:load-fixtures [options]
+#/ command: sf2:load-fixtures: "load all fixtures"
+#/ usage: rerun sf2:load-fixtures [options]
 
 # Load common functions
 # ---------------------
@@ -29,7 +29,7 @@
 # Trap errors and exit. The call to `rerun_die` will print the
 # the error message and exit with the error command exit status. 
 
-trap 'rerun_die $? "*** command failed: chess:load-fixtures. ***"' ERR
+trap 'rerun_die $? "*** command failed: sf2:load-fixtures. ***"' ERR
 
 # Run [set] `nounset` to treat unset variables as errors. Set [pipefail]
 # so a pipeline return status is the value of the last 
@@ -60,15 +60,15 @@ rerun_options_parse "$@"
 # ----------------------
 php app/console --env=dev doctrine:database:drop --connection=default --force
 php app/console --env=dev doctrine:database:create --connection=default
-php app/console --env=dev doctrine:database:drop --connection=explorer --force
-php app/console --env=dev doctrine:database:create --connection=explorer
+php app/console --env=dev doctrine:database:drop --connection=other1 --force
+php app/console --env=dev doctrine:database:create --connection=other1
 
 php app/console --env=dev doctrine:schema:update --force --em=default
-php app/console --env=dev doctrine:schema:update --force --em=explorer
+php app/console --env=dev doctrine:schema:update --force --em=other1
 #php app/console --env=dev doctrine:schema:update --force --em=slave
-#php app/console --env=dev doctrine:schema:update --force --em=tacgen
+#php app/console --env=dev doctrine:schema:update --force --em=other2
 php app/console --env=dev doctrine:fixtures:load --no-interaction --em=default
-php app/console --env=dev doctrine:fixtures:load --no-interaction --em=explorer
+php app/console --env=dev doctrine:fixtures:load --no-interaction --em=other1
 
 # - - -
 # Put the command implementation here.

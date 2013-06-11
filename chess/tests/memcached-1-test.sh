@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p memcached [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p memcached [--answers <>]
 #
 
 # Helpers

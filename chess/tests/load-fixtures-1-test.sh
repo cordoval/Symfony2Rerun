@@ -1,6 +1,6 @@
 #!/usr/bin/env roundup
 #
-#/ usage:  rerun stubbs:test -m chess -p load-fixtures [--answers <>]
+#/ usage:  rerun stubbs:test -m sf2 -p load-fixtures [--answers <>]
 #
 
 # Helpers
