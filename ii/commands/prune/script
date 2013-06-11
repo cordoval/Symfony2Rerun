@@ -9,7 +9,7 @@
 # The `command` and `usage` comments describe the command
 # and show its options.
 # 
-#/ command: ii:prune: "prune merged branches"
+#/ command: ii:prune: "prune git obsolete branches"
 #/ usage: rerun ii:prune [options]
 
 # Load common functions
